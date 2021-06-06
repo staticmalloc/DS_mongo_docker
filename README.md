@@ -11,14 +11,3 @@ To rebuild project you need:
 * Remove old image docker-spring-boot-mongo from Docker
 
 * Run `docker-compose up` in docker directory
-
-### Examples of requests to server
-
-* POST request to save user data: `curl --header "Content-Type: application/json" \
---request POST \
---data '{"firstName":"Aleksandr","lastName":"Chmil"}' \
-http://localhost:8080/users`
-  
-* GET request to get all users data: `curl http://localhost:8080/users`
-
-* GET request to find user by id: `curl http://localhost:8080/users/{id}`
